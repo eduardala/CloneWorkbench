@@ -1,6 +1,8 @@
 package com.eduarda.clone.DTO;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -10,6 +12,7 @@ import java.util.Set;
 
 public class ConjuntoCaracteres {
     
+    List<String> caracter = new ArrayList<String>();
     public static Set<String> SetandoCaracter(){
         
         Set<String> caracterSet = new HashSet<>();
@@ -58,4 +61,49 @@ public class ConjuntoCaracteres {
         return caracterSet;
     }
     
+    //POPULANDO PARA UMA POSSÍVEL UTILIZAÇÃO EM UM FRAME
+    public List<String> ListaCaracteres () {
+        caracter.add("BIG5");
+        caracter.add("DEC8");
+        caracter.add("CP850");
+        caracter.add("HP8");
+        caracter.add("KOI8R");
+        caracter.add("LATIN1");
+        caracter.add("LATIN2");
+        caracter.add("SWE7");
+        caracter.add("ASCII");
+        caracter.add("UJIS");
+        caracter.add("SJIS");
+        caracter.add("HEBREW");
+        caracter.add("TIS620");
+        caracter.add("EUCKR");
+        caracter.add("KOI8U");
+        caracter.add("GB2312");
+        caracter.add("GREEK");
+        caracter.add("CP1250");
+        caracter.add("GBK");
+        caracter.add("LATIN5");
+        caracter.add("ARMSCII8");
+        caracter.add("UTF8");
+        caracter.add("UCS2");
+        caracter.add("CP866");
+        caracter.add("KEYBCS2");
+        caracter.add("MACCE");
+        caracter.add("MACROMAN");
+        caracter.add("CP852");
+        caracter.add("LATIN7");
+        caracter.add("UTF8MB4");
+        caracter.add("CP1251");
+        caracter.add("UTF16");
+        caracter.add("CP1256");
+        caracter.add("CP1257");
+        caracter.add("UTF32");
+        caracter.add("BINARY");
+        caracter.add("GEOSTD8");
+        caracter.add("CP932");
+        caracter.add("EUCJPMS");
+        
+        return caracter;
+        
+    }
 }

@@ -1,6 +1,8 @@
 package com.eduarda.clone.DTO;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -10,6 +12,7 @@ import java.util.Set;
 
 public class TipoAtributo {    
     String tipos = "iniciando";
+    List<String> tipo = new ArrayList<String>();
     public static Set<String> getTipos(){
         
         Set<String> tipos = new HashSet<>();
@@ -61,4 +64,52 @@ public class TipoAtributo {
         return tipos;
     }
     
+    //POPULANDO PARA UMA POSSÍVEL UTILIZAÇÃO EM UM FRAME    
+    public List<String> ListaTipos () {
+        // NUMÉRICOS
+        tipo.add("TINYINT");
+        tipo.add("SMALLINT");
+        tipo.add("MEDIUMINT");
+        tipo.add("INT");
+        tipo.add("BIGINT");
+        tipo.add("DECIMAL");
+        tipo.add("FLOAT");
+        tipo.add("DOUBLE");
+        tipo.add("BIT");
+        
+        // STRING
+        tipo.add("CHAR");
+        tipo.add("VARCHAR(100)");
+        tipo.add("BINARY");
+        tipo.add("VARBINARY");
+        tipo.add("BLOB");
+        tipo.add("TINYBLOB");
+        tipo.add("MEDIUMBLOB");
+        tipo.add("LONGBLOB");
+        tipo.add("TINYTEXT");
+        tipo.add("TEXT");
+        tipo.add("MEDIUMTEXT");
+        tipo.add("LONGTEXT");
+        tipo.add("ENUM");
+        tipo.add("SET");
+        
+        // ESPACIAIS
+        tipo.add("GEOMETRY");
+        tipo.add("POINT");
+        tipo.add("LINESTRING");
+        tipo.add("POLYGON");
+        tipo.add("GEOMETRYCOLLECTION");
+        tipo.add("MULTILINESTRING");
+        tipo.add("MULTIPOINT");
+        tipo.add("MULTIPOLYGON");
+        
+        // DATAS
+        tipo.add("DATE");
+        tipo.add("TIME");
+        tipo.add("TIMESTAMP");
+        tipo.add("YEAR");
+        tipo.add("DATETIME");
+        
+        return tipo;
+    }
 }
